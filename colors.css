@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Arial", sans-serif;
+  --font-heading: "Georgia", serif;
+
+  --orange: #ff7f50;
+  --blue: #002f6c;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #ff0000;
+  --green: #00ff00;
+  --gray: #37434f;
+  --lavendar: #405580;
+  --highlight: #d05f27;
+  
+  --hover:: rgb(97, 97, 97);
+  --link: rgba(0,47,108,.6);
+  --linkHover: rgba(255,255,255,.6);
+}

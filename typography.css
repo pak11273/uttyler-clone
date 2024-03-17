@@ -1,0 +1,7 @@
+.sectionHeading {
+  font-size: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}

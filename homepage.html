@@ -1,0 +1,75 @@
+<!DOCTYPE html viewport="auto">
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>example</title>
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <script>
+      function toggleMenu() {
+        console.log("toggleMenu")
+      }
+    </script>
+  </head>
+  <body>
+    <div class="colorBar">
+      <div class="colorBar__item_left"></div>
+      <div class="colorBar__item"></div>
+    </div>
+    <header>
+      <button aria-label="open menu" onclick="toggleMenu()" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      <a href="https://www.uttyler.edu/apply/" class="ctaBtn">
+        APPLY NOW!
+      </a>
+    </header>
+    <section id="sideMenu" class="hide">
+      <button
+        class="closeBtn"
+        aria-label="Close Menu"
+        onclick="toggleCloseBtn()"
+      >
+        X
+      </button>
+      <input class="searchBar" type="text" placeholder="Search" aria-label="Search" />
+    </input>
+      <div class="sideMenu__item">UNDERGRADUATE</div>
+      <div class="sideMenu__item">GRADUATE</div>
+      <div class="sideMenu__item">ONLINE</div>
+      <div class="sideMenu__item">Contact</div>
+    </section>
+    <main id="main">
+      <section class="hero">
+        <video
+          class="homeVideo"
+          src="./assets/home.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="overlay">
+          <img alt="UT Tyler Logo" src="./assets/2022-logo-white-shadow.png" />
+          <div class="subLinks">
+            <a href="https://www.uttyler.edu/programs/undergraduate/" class="" >UNDERGRADUATE</a>
+            <a href="https://www.uttyler.edu/programs/graduate/" class="" >GRADUATE</a>
+            <a href="https://www.uttyler.edu/online/" class="" >ONLINE</a>
+          </div>
+        </div>
+      </section>
+      <div class="content">
+        <text class="sectionHeading">The University of Texas at Tyler</text>
+        <p>Part of the internationally-renowned University of Texas System, The University of Texas at Tyler offers UT excellence and the advantages of a comprehensive public university – set in a friendly learning environment focused on individual student success. With leading programs in nursing, business, engineering, arts and sciences, pharmacy, pre-med and teacher education, UT Tyler is passionate about your personal and professional success.</p>
+      </div>
+      <img alt="graduation image" src="./assets/20210616-stronger-together.jpg" />
+    </main>
+  </body>
+</html>
