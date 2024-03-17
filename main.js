@@ -16,6 +16,7 @@ function toggleMenu() {
 
 function toggleCloseBtn() {
   if (video) video.classList.toggle("dim")
-  if (sideMenu) sideMenu.classList.toggle("showPanel")
   if (content) content.classList.toggle("dim")
+  if (colorBar) colorBar.classList.toggle("dim")
+  if (sideMenu) sideMenu.classList.toggle("showPanel")
 }

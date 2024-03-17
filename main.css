@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-size: 1.6rem;
   background-color: var(--white);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 button {
   background: none;
@@ -73,18 +73,26 @@ header {
   align-items: center;
   padding-right: 2rem;
 }
-.ctaBtn {
+.ctaBtn,
+.threeSixtyBtn {
   text-decoration: none;
   cursor: pointer;
   color: var(--white);
   transition: all 0.3s;
+}
+.threeSixtyBtn {
+  position: absolute;
+  padding: 0 2rem 2rem 0;
+  bottom: 0;
+  right: 0;
 }
 .hamburger {
   z-index: 1;
   padding: 1rem;
   cursor: pointer;
 }
-.ctaBtn:hover {
+.ctaBtn:hover,
+.threeSixtyBtn:hover {
   color: var(--hover);
 }
 header .hamburger:hover .line {
@@ -195,6 +203,17 @@ header .hamburger:hover .line {
   text-align: center;
   padding: 5rem;
 }
+
+.content a {
+  display: inline-block;
+  margin: 30px auto 0 auto;
+  max-width: 1200px;
+  width: 70%;
+  overflow: hidden;
+}
+.content a img {
+  width: 175%;
+}
 @media (min-width: 360px) {
   .navbar {
     flex-direction: row;
@@ -226,6 +245,9 @@ header .hamburger:hover .line {
   .overlay {
     width: 600px;
     margin-left: -300px;
+  }
+  .content a img {
+    width: 100%;
   }
 }
 
