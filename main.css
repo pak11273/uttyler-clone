@@ -64,13 +64,15 @@ main {
   opacity: 0.5;
 }
 header {
+  position: fixed;
   font-size: 2rem;
   width: 100%;
   z-index: 1;
-  position: absolute;
+}
+.headerBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-right: 2rem;
 }
 .ctaBtn,
