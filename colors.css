@@ -14,8 +14,12 @@
   --gray: #37434f;
   --lavendar: #405580;
   --highlight: #d05f27;
-  
+  --pageColor:#f3f5f8;
+
   --hover:: rgb(97, 97, 97);
   --link: rgba(0,47,108,.6);
   --linkHover: rgba(255,255,255,.6);
+
+  /* footer */
+  --footerSubLinks: rgba(0, 47, 108, 100);
 }
