@@ -136,20 +136,52 @@ header .hamburger:hover .line {
   z-index: 2;
   transition: right 0.3s ease; /* Smooth sliding transition */
 }
+.sideMenuLinks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
 #sideMenu.showPanel {
-  display: block;
+  display: flex;
   right: 0;
 }
 .sideMenu__item {
-  display: flex;
-  justify-content: center;
-  margin: 0.2rem;
+  position: relative;
   width: 100%;
+}
+.sideMenu__item a {
+  text-decoration: none;
+}
+.sideMenu__item span {
+  display: inline-block;
+  width: 99%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
   color: var(--lavendar);
-  background-color: var(--white);
-  padding: 3rem;
+  background-color: transparent;
+  padding: 2rem;
   font-weight: bolder;
   text-transform: uppercase;
+  background-color: var(--white);
+  transition: background-color 1.5s, color 0.3s;
+}
+.sideMenu__item span:hover {
+  background-color: var(--blue);
+  color: white;
+}
+.sideMenu__item img {
+  display: none;
+  object-fit: contain;
+  width: 99%;
+  opacity: 0.5;
+}
+.sideMenu__item a {
+  background-color: var(--lavendar);
+}
+.sideMenu__item a:hover {
+  opacity: 1;
 }
 .hero {
   position: relative;
@@ -228,6 +260,39 @@ header .hamburger:hover .line {
   .subLinks a {
     transition: all 0.5s;
   }
+  .sideMenu__item {
+    width: 50%;
+  }
+  .sideMenuLinks {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .sideMenu__item a {
+    transition: opacity 0.5s;
+  }
+  .sideMenu__item span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    background-color: transparent;
+  }
+  .sideMenu__item span:hover {
+    background-color: transparent;
+    opacity: 1;
+  }
+  .sideMenu__item img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    transition: opacity ease 0.5s;
+  }
+  .sideMenu__item img:hover,
+  .sideMenu_item a span:hover {
+    opacity: 1;
+  }
 }
 @media (min-width: 1000px) {
   #sideMenu {
@@ -240,10 +305,13 @@ header .hamburger:hover .line {
   .content a img {
     width: 100%;
   }
-}
-.hide {
-  display: none;
-}
-.show {
-  display: block;
+  /* .sideMenu__item {
+    width: 33.333%;
+  } */
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
 }
